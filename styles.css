@@ -1,0 +1,53 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: azure;
+  width: 200px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: auto;
+  background-color: #f7f7ff;
+  z-index: -1;
+}
+
+.mainDiv {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  width: 700px;
+  min-width: 700px;
+  max-width: 700px;
+  min-height: 500px;
+  height: 500px;
+  background-color: #fff;
+  margin: 0 -100px 50px 0;
+}
+
+.right-navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: azure;
+  width: 80px;
+  height: 100vh;
+  overflow: hidden;
+}
