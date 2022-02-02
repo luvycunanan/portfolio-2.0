@@ -104,6 +104,11 @@
   color: var(--icon-color);
 }
 
+#dark-mode-icon:hover {
+  color: blue;
+  cursor: pointer;
+}
+
 .icon-container {
   display: flex;
   flex-direction: column;
