@@ -37,6 +37,10 @@
 }
 
 .sidebar-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--main-containers);
   min-width: 220px;
   max-width: 230px;
@@ -62,18 +66,26 @@
   height: 100vh;
 }
 
-
 .title {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  height: 30%;
 }
 
 .icon-link-to {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+
+.about-icon {
+  margin:auto;
 }
 
 .mainDiv {
