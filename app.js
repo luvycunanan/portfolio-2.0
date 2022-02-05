@@ -5,6 +5,7 @@ toggleDarkModeBtn.addEventListener('click', () => {
     document.documentElement.setAttribute('data-theme', 'dark');
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
+    location.reload();
   }
 
   console.log('clicked')

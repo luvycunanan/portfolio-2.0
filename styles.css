@@ -3,6 +3,9 @@
   --main-background:#f5f5fe;
   --icon-border:#f7f7ff;
   --icon-color:#767676;
+  --font-color: black;
+  --about-icon: #ffb400;
+  --progress-bar: #ffb30073;
   background-color: var(--main-background);
 }
 
@@ -11,16 +14,27 @@
   --main-background: #7c7c7c;
   --icon-border: #f7f7ff;
   --icon-color: #c5c5c5;
+  --font-color: white;
 }
 
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
-    background: transparent;  /* Invisible Scrollbar */
+  background: transparent;  /* Invisible Scrollbar */
 }
 
 * {
   margin: 0;
   padding: 0;
+  color: var(--font-color);
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 85%;               
+  background-color:#00000013;
+  height: 2px;
 }
 
 #container {
@@ -39,7 +53,7 @@
 .sidebar-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--main-containers);
   min-width: 220px;
@@ -66,6 +80,13 @@
   height: 100vh;
 }
 
+.photo {
+  position: relative;
+  width: 60%;
+  background-color: var(--main-background);
+  border-radius: 50%;
+}
+
 .title {
   position: relative;
   display: flex;
@@ -79,13 +100,70 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   width: 100%;
+  margin: 10px 0;
 }
 
 .about-icon {
-  margin:auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  background-color: var(--about-icon);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.icon-link {
+  text-decoration: none;
+  margin: auto;
+  color: rgb(49, 49, 49);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.progress-bar {
+  -webkit-appearance: none;
+  border: 1px solid var(--progress-bar);
+  border-radius: 9px;
+  height: 7px;
+}
+
+::-webkit-progress-bar {
+  background-color: transparent;
+  height: 3px;
+  margin: 1px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--about-icon) !important;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.other-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+ul, li {
+  font-size: 20px;
+  list-style: none;
 }
 
 .mainDiv {
