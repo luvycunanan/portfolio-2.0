@@ -27,6 +27,7 @@
   padding: 0;
   color: var(--font-color);
   scroll-behavior: smooth;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 hr {
@@ -107,23 +108,23 @@ hr {
   margin: 10px 0;
 }
 
-.about-icon {
-  position: relative;
+.mini-anchor {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: auto;
   background-color: var(--about-icon);
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  margin: auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-.icon-link {
-  text-decoration: none;
-  margin: auto;
-  color: rgb(49, 49, 49);
+.mini-anchor:hover {
+  background-color: var(--main-background);
+}
+
+.mini-anchor:hover .mini-icon {
+  color: var(--icon-color);
 }
 
 .skills {
@@ -131,6 +132,10 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.skill, .percentage {
+  font-size: 15px;
 }
 
 .progress-bar {
@@ -157,13 +162,15 @@ progress::-webkit-progress-value {
 }
 
 .other-skills {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  width: 80%;
 }
 
 ul, li {
-  font-size: 20px;
+  font-size: 15px;
   list-style: none;
 }
 
@@ -196,31 +203,30 @@ ul, li {
 }
 
 #dark-mode-icon:hover {
-  color: blue;
+  color: var(--about-icon);
   cursor: pointer;
 }
 
-.icon-container {
+.anchor-box {
   display: flex;
-  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  margin: 30px auto;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
-  margin: 20px auto 20px auto;
-  background-color: var(--main-background);
   border-radius: 50px;
-  border: none;
+  background-color: var(--main-background);
+  text-decoration: none;
 }
 
-.icon-container:hover {
+.anchor-box:hover {
   background-color: var(--about-icon);
+}
+
+.anchor-box:hover .nav-icon {
+  color: var(--font-color);
 }
 
 .nav-icon {
   color: var(--icon-color);
-}
-
-a {
-  text-decoration: none;
 }

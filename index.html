@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="stylesheet" href="./styles.css">
   <title>Document</title>
@@ -20,18 +25,22 @@
         <img class="photo" src="./assets/fb00dc6d46afaff65ad8c23c5945b763-sticker.png" alt="photo">
         <h3 class="name">Luvy Cunanan</h3>
         <h5 class="position-title">Front-End Developer</h5>
+        
+        <!-- Link to anchors -->
         <div class="icon-link-to">
-          <div class="about-icon">
-            <a href="https://github.com/luvycunanan" target="blank_" class="icon-link fab fa-lg fa-github-square"></a>
-          </div>
-          <div class="about-icon">
-            <a href="https://www.linkedin.com/in/luvycunanan/" target="blank_" class="icon-link fab fa-lg fa-linkedin"></a>
-          </div>
-          <div class="about-icon">
-            <a href="https://docs.google.com/document/d/1LxDVSTm70DGQoiJnEBrgMvLC0s2-v3vJSv_UKmquuAs/edit?usp=sharing" target="blank_" class="icon-link fas fa-lg fa-file-user"></a>
-          </div>
+          <a href="https://github.com/luvycunanan" target="blank_" class="mini-anchor">
+            <i class="icon-link fab fa-lg fa-github-square mini-icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/luvycunanan/" target="blank_" class="mini-anchor">
+            <i class="icon-link fab fa-lg fa-linkedin mini-icon"></i>
+          </a>
+          <a href="https://docs.google.com/document/d/1LxDVSTm70DGQoiJnEBrgMvLC0s2-v3vJSv_UKmquuAs/edit?usp=sharing" target="blank_" class="mini-anchor">
+            <i class="icon-link fas fa-lg fa-file-user mini-icon"></i>
+          </a>
         </div>
+
         <hr>
+
       </div>
 
       <!-- About -->
@@ -50,14 +59,14 @@
       
       <!-- Skills -->
       <section class="skills">
-        <h3 class="skills">Skills</h3>
+        <h4 class="skills">Skills</h4>
         
         <!-- Javascript bar -->
         <section class="skillJS">
           <div class="skill-box">
             <label class="skill" for="js">JavaScript</label>
             <text class="percentage">77%</text>
-        </div>
+          </div>
           <progress class="progress-bar" id="js" value="77" max="100" />
           progress
         </section>
@@ -115,14 +124,14 @@
 
       <hr>
 
-      <section class="otherSkills">
-        <text class="otherSkills">Other Skills</text>
+      <section class="other-skills">
+        <h4>Other Skills</h4>
         <ul>
-          <li class="bootstrap">Bootstrap</li>
-          <li class="materialize">Materialize</li>
-          <li class="sass">Sass</li>
-          <li class="restApi">REST</li>
-          <li class="cpp">C++</li>
+          <li>Bootstrap</li>
+          <li>Materialize</li>
+          <li>Sass</li>
+          <li>REST</li>
+          <li>C++</li>
         </ul>
       </section>
 
@@ -150,32 +159,26 @@
     </div>
 
     <!-- Right navbar -->
+    <!-- Dark Mode button -->
     <div class="right-navbar">
       <section class="dark-mode">
         <a class="fas fa-lg fa-adjust" id="dark-mode-icon"></a>
       </section>
-      <nav class="nav-links">
-        <a href="#home">
-          <div class="icon-container">
-            <i class="fas fa-lg fa-home nav-icon"></i>
-          </div>
-        </a>
-        <a href="#education">
-          <div class="icon-container">
-            <i class="fas fa-lg fa-graduation-cap nav-icon"></i>
-          </div>
-        </a>
-        <a href="#experience">
-          <div class="icon-container">
-            <i class="fas fa-lg fa-briefcase nav-icon"></i>
-          </div>
-        </a>
-        <a href="#projects">
-          <div class="icon-container">
-            <i class="fas fa-lg fa-file-code nav-icon"></i>
-          </div>
-        </a>
 
+    <!-- Page Anchor tags -->
+      <nav class="nav-links">
+        <a href="#home" class="anchor-box">
+          <i class="fas fa-lg fa-home nav-icon"></i>
+        </a>
+        <a href="#education" class="anchor-box">
+          <i class="fas fa-lg fa-graduation-cap nav-icon"></i>
+        </a>
+        <a href="#experience" class="anchor-box">
+          <i class="fas fa-lg fa-briefcase nav-icon"></i>
+        </a>
+        <a href="#projects" class="anchor-box">
+          <i class="fas fa-lg fa-file-code nav-icon"></i>
+        </a>
       </nav>
     </div>
   </div>
