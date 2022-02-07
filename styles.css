@@ -1,20 +1,20 @@
 :root {
-  --main-containers:#ffffff;
-  --main-background:#f5f5fe;
+  --main-containers:#fbfaf9;
+  --main-background:#eee7df;
   --icon-border:#f7f7ff;
   --icon-color:#767676;
-  --font-color: #000000;
-  --about-icon: #ffb400;
-  --progress-bar: #ffb30073;
+  --font-color: #6d574d;
+  --about-icon: #abded7;
+  --progress-bar: #4d8581;
   background-color: var(--main-background);
 }
 
 [data-theme="dark"] {
-  --main-containers: #2b2b2b;
-  --main-background: #7c7c7c;
+  --main-containers: #9e8980;
+  --main-background: #f8f5f2;
   --icon-border: #f7f7ff;
-  --icon-color: #c5c5c5;
-  --font-color: white;
+  --icon-color: #767676;
+  --font-color: #fbfaf9;
 }
 
 ::-webkit-scrollbar {
@@ -117,6 +117,7 @@ hr {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  color: var(--main-background);
 }
 
 .mini-anchor:hover {
@@ -182,28 +183,44 @@ ul, li {
   margin: 0 0 50px 0;
 }
 
-.dark-mode {
-  position: relative;
-  margin: 20px auto 100px auto;
-  top: 0;
-}
-
 .nav-links {
   position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 }
 
-#dark-mode-icon {
-  background-color: none;
+.dark-mode {
+  position: relative;
+  margin: 20px auto 100px auto;
+  top: 0;
+  display: flex;
+  width: 40px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: var(--main-background);
+}
+
+#dark-mode {
   color: var(--icon-color);
+  transition: color .5s;
 }
 
-#dark-mode-icon:hover {
-  color: var(--about-icon);
+#dark-mode:hover {
+  color: #ffb400;
+}
+
+.dark-mode-toggle {
+  background-color: none;
+  color: #ffb400;
+  transition: color .5s;
+}
+
+.dark-mode-toggle:hover {
+  color: black;
   cursor: pointer;
 }
 

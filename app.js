@@ -1,11 +1,13 @@
-const toggleDarkModeBtn = document.querySelector('#dark-mode-icon');
+const toggleDarkMode = document.querySelector('#light-mode');
 
-toggleDarkModeBtn.addEventListener('click', () => {
-  if (!document.documentElement.hasAttribute('data-theme', 'dark')) {
+toggleDarkMode.addEventListener('click', () => {
+  if (document.getElementById('light-mode')) {
+    toggleDarkMode.id = 'dark-mode';
     document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
+  } else if (document.getElementById('dark-mode')) {
+    toggleDarkMode.id = 'light-mode';
     document.documentElement.setAttribute('data-theme', 'light');
-    location.reload();
+    // location.reload();
   }
 
   console.log('clicked')
