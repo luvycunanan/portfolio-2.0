@@ -9,7 +9,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="./styles.css">
@@ -23,8 +23,9 @@
       <!-- Intro -->
       <div class="title">
         <img class="photo" src="./assets/fb00dc6d46afaff65ad8c23c5945b763-sticker.png" alt="photo">
-        <h3 class="name">Luvy Cunanan</h3>
+        <h3 class="bold-text">Luvy Cunanan</h3>
         <h5 class="position-title">Front-End Developer</h5>
+        <h6 class="city">Concord, CA</h6>
         
         <!-- Link to anchors -->
         <div class="icon-link-to">
@@ -42,24 +43,10 @@
         <hr>
 
       </div>
-
-      <!-- About -->
-      <section class="about">
-        <section class="location">
-          <text class="location">Location</text>
-          <text class="city">Concord, CA</text>
-        </section>
-        <section class="can-relocate">
-          <text class="relocate">Can Relocate?</text>
-          <text class="yes">Yes</text>
-        </section>
-      </section>
-
-      <hr>
       
       <!-- Skills -->
       <section class="skills">
-        <h4 class="skills">Skills</h4>
+        <h4 class="bold-text">Skills</h4>
         
         <!-- Javascript bar -->
         <section class="skillJS">
@@ -125,13 +112,23 @@
       <hr>
 
       <section class="other-skills">
-        <h4>Other Skills</h4>
+        <h4 class="bold-text">Other Skills</h4>
         <ul>
-          <li>Bootstrap</li>
-          <li>Materialize</li>
-          <li>Sass</li>
-          <li>REST</li>
-          <li>C++</li>
+          <li>
+            <i class="fas fa-circle-notch circle"></i>
+            Bootstrap</li>
+          <li>
+            <i class="fas fa-circle-notch circle"></i>
+            Materialize</li>
+          <li>
+            <i class="fas fa-circle-notch circle"></i>
+            Sass</li>
+          <li>
+            <i class="fas fa-circle-notch circle"></i>
+            REST</li>
+          <li>
+            <i class="fas fa-circle-notch circle"></i>
+            C++</li>
         </ul>
       </section>
 
@@ -141,20 +138,34 @@
 
     <!-- Main -->
     <div class="main">
-      <div class="mainDiv" id="home">
-        <h1>Center Div Placeholder</h1>
+      
+      <!-- About Me -->
+      <div class="main-div about-div" id="home">
+        <div class="left">
+          <h1 class="bold-text">Hi, I'm Luvy Cunanan<br>
+          <span class="highlight">Front-end</span> Developer</h1>
+          <p>I'm a Front-End Focused Software Engineer with the drive and hunger to learn and improve my software engineering skills. Although I work well in a team environment, I also have the discipline and the work time management skills to work independently.</p>
+          <button class="contact">Contact me</button>
+        </div>
+        <div class="right">
+          <img class="portrait" src="./assets/34376ae11651aee8272658eff619e6f9-sticker.png" alt="photo">
+        </div>
       </div>
-      <div class="mainDiv" id="education">
-        <h1>Center Div Placeholder</h1>
-        <h3>Education</h3>
+
+      <!-- Projects -->
+      <div class="main-div" id="projects">
+        <h1 class="bold-text">Center Div Placeholder</h1>
+        <h3>Projects</h3>
       </div>
-      <div class="mainDiv" id="experience">
-        <h1>Center Div Placeholder</h1>
+
+
+      <div class="main-div" id="experience">
+        <h1 class="bold-text">Center Div Placeholder</h1>
         <h3>Work Experience</h3>
       </div>
-      <div class="mainDiv" id="projects">
-        <h1>Center Div Placeholder</h1>
-        <h3>Projects</h3>
+      <div class="main-div" id="education">
+        <h1 class="bold-text">Center Div Placeholder</h1>
+        <h3>Education</h3>
       </div>
     </div>
 
@@ -170,14 +181,14 @@
         <a href="#home" class="anchor-box">
           <i class="fas fa-lg fa-home nav-icon"></i>
         </a>
-        <a href="#education" class="anchor-box">
-          <i class="fas fa-lg fa-graduation-cap nav-icon"></i>
+        <a href="#projects" class="anchor-box">
+          <i class="fas fa-lg fa-file-code nav-icon"></i>
         </a>
         <a href="#experience" class="anchor-box">
           <i class="fas fa-lg fa-briefcase nav-icon"></i>
         </a>
-        <a href="#projects" class="anchor-box">
-          <i class="fas fa-lg fa-file-code nav-icon"></i>
+        <a href="#education" class="anchor-box">
+          <i class="fas fa-lg fa-graduation-cap nav-icon"></i>
         </a>
       </nav>
     </div>
