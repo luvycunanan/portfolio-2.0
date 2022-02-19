@@ -57,7 +57,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--main-background);
-  width: 100%;
+  /* width: 100%; */
   min-width: 1215px;
   max-width: 1350px;
   height: 100%;
@@ -228,8 +228,6 @@ progress::-webkit-progress-value {
 
 .main-div {
   width: 100%;
-  /* height: 500px; */
-  min-height: 400px;
   background-color: var(--main-containers);
   margin: 0 0 50px 0;
   display: flex;
@@ -255,11 +253,6 @@ progress::-webkit-progress-value {
   position: relative;
   width: 45%;
   margin: 0;
-}
-
-p {
-  font-size: 12px;
-  width: 80%;
 }
 
 .highlight {
@@ -359,13 +352,17 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: flex-start; */
   flex-wrap: wrap;
   position: relative;
   height: 80%;
   width: 100%;
   background-color: var(--main-background);
 }
+
+.project-div {
+  min-height: 400px;
+}
+
 
 .field-notes {
   background-image: url('./assets/fieldNotes.png');
@@ -406,12 +403,13 @@ p {
   text-decoration: none;
 }
 
-.work-history {
+.work-history, .education-history {
   background-color: var(--main-containers);
   height: auto;
+  width: 100%;
 }
 
-.work-container {
+.work-container, .education-container {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -419,16 +417,41 @@ p {
   width: 100%;
 }
 
-.work-title {
+.work-title, .institution-name {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 30%;
-  margin: auto;
-  text-align: center;
+  margin: 10px 10px;
+  text-align: start;
 }
 
-.work-description {
+.work-description, .education-description {
   position: relative;
   width: 70%;
+  margin: 10px 10px;
+  text-align: start;
+}
+
+.title-date {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  text-align: start;
+}
+
+.span-date {
+  padding: 0 5px;
+  margin: 0 10px;
+  /* background-color: var(--progress-bar); */
+  /* color: white; */
+  background-color: var(--about-icon);
+  color: #6d574d;
+}
+
+.section-title {
+  font-size: 45px;
+  color: var(--font-color);
+  margin: 10px;
 }
