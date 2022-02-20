@@ -343,7 +343,6 @@ progress::-webkit-progress-value {
   text-align: center;
   position: relative;
   width: 100%;
-  height: 20%;
   background-color: var(--main-background);
   color: #6d574d;
 }
@@ -409,7 +408,7 @@ progress::-webkit-progress-value {
   width: 100%;
 }
 
-.work-container, .education-container {
+.work-container{
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -426,7 +425,7 @@ progress::-webkit-progress-value {
   text-align: start;
 }
 
-.work-description, .education-description {
+.work-description {
   position: relative;
   width: 70%;
   margin: 10px 10px;
@@ -442,16 +441,33 @@ progress::-webkit-progress-value {
 }
 
 .span-date {
-  padding: 0 5px;
-  margin: 0 10px;
-  /* background-color: var(--progress-bar); */
-  /* color: white; */
+  padding: 0 3px;
+  margin: 0 3px;
   background-color: var(--about-icon);
   color: #6d574d;
 }
 
 .section-title {
   font-size: 45px;
-  color: var(--font-color);
+  margin: 10px;
+}
+
+.ed-title {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.ed-date {
+  width: 30%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.education-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
   margin: 10px;
 }
