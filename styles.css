@@ -267,8 +267,6 @@ progress::-webkit-progress-value {
   border: none;
   background-color: var(--about-icon);
   color: #6d574d;
-
-  display: none; /* ----------- Button Disabled for now ------------ */
 }
 
 .contact:hover {
@@ -472,4 +470,8 @@ progress::-webkit-progress-value {
   width: 50%;
   align-items: center;
   margin: 10px;
+}
+
+.contact-me {
+  display: none;
 }
